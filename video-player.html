@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<style type="text/css">
+logo {
+	position:center;
+}
+	{ background-color: orange; 
+	   font-family: sans-serif; }
+	</style>
+	<meta charset="utf-8">
+<title>Nu, pogodi! Videos</title>
+	<meta name="description" content="All 20 episodes of the Russian cartoon series 'Nu, pogodi!', available as streaming HTML5 video.">
+	<meta name="author"		 content="Robert Menes">
+	<meta name="viewport"	 content="width=1280">
+</head>
+<body>
+
+
+<img class="logo" src="images/logo.png">
+<br />
+<div style="text-align=center">
+	<button onclick="makeBig()">Big</button>
+	<button onclick="makeSmall()">Small</button>
+	<button onclick="makeNormal()">Normal</button>
+	<br />
+	<video id="video1" width="640" height="480" poster="images/screencap-14.jpg" video controls="controls">
+		<source src="videos/nupogodi-14.mp4" type="video/mp4" />
+		Sorry, your browser does not support HTML5 Video. Get a real browser, asshat.
+	</video>
+	<br />
+	<br />
+	<br />
+	<p>And if you liked the theme song...</p>
+	<audio controls="controls">
+		<source src="audio-clips/opening.ogg" type="audio/ogg" />
+		Sorry, your browser does not support HTML5 Audio. Get a real browser, asshat.
+	</audio>
+</div>
+
+<script type="text/javascript">
+var thisVideo=document.getElementById("video1");
+
+function makeBig()
+{
+thisVideo.width=950;
+}
+
+function makeSmall()
+{
+thisVideo.width=512;
+}
+
+function makeNormal()
+{
+thisVideo.width=640;
+}
+
+</script>
+
+<p>This is Episode 14 of <a href="http://nupogodi.net/" target="_blank">Nu, Pogodi!</a> (Russian: Ну, погоди!)</p>
+<br />
+
+<p style="font-style:italic">Tell us what you thought!</p>
+<br />
+
+<form action="demo_form.asp">
+  <input type="checkbox" name="opinion" value="Like" /> I liked it!<br />
+  <input type="checkbox" name="opinion" value="NotLike" /> I didn't like it. <br />
+  <input type="submit" value="Submit" />
+</form>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" rel="dct:type">website</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+
+</body>
+</html>
